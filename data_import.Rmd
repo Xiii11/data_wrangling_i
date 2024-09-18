@@ -5,6 +5,7 @@ output: github_document
 
 ```{r setup}
 library(tidyverse) 
+library(readxl)
 #focus on readr today#
 ```
 
@@ -44,6 +45,26 @@ checkout '?read_csv' for more information.
 litters_df = read_csv("./data/FAS_litters.csv", na = c("", "NA", ".", 999))
 #The system will recognize these values are missing.#
 ```
+
+
+## Other file formats
+
+Read in an excel file
+
+```{r}
+mlb_df = read_excel ("./data/mlb11.xlsx", range = "A1:F7")
+mlb_df
+```
+
+
+Read in a SAS file
+
+```{r}
+library(haven)
+pulse_df = read_sas("./data/public_pulse_data.sas7bdat")
+pulse_df
+```
+
 
 
 
