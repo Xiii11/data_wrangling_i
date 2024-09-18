@@ -81,6 +81,19 @@ Base version makes things more messy than readr version. Readr version makes
 better illustration than base version.
 
 
+## Exporting data
+
+Export the mlb sub_table
+
+```{r}
+write_csv(mlb_df, "./data/mlb_subtable.csv")
+```
+
+
+
+
+
+
 
 
 
