@@ -36,6 +36,15 @@ skimr::skim(litters_df)
 ```
 
 
+## Options to read_csv
+
+checkout '?read_csv' for more information.
+
+```{r}
+litters_df = read_csv("./data/FAS_litters.csv", na = c("", "NA", ".", 999))
+#The system will recognize these values are missing.#
+```
+
 
 
 
