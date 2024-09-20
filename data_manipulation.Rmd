@@ -3,7 +3,7 @@ title: "Data Manipulation"
 output: github_document
 ---
 
-```{r setup}
+```{r setup, echo=FALSE, message=FALSE}
 library(tidyverse) 
 ```
 
